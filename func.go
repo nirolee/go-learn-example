@@ -21,13 +21,26 @@ func div(a, b int) (q, r int) {
 	return a / b, a % b
 }
 
+func z() {
+	var a = 2
+	var pa *int = &a
+	*pa = 3
+	fmt.Println(a)
+}
+func swap(a, b int) (int, int) {
+	return b, a
+}
 func main() {
-	eval(12, 5, "/")
-	if result, err := eval(12, 5, "x"); err != nil {
-		fmt.Println("error: ", err)
-	} else {
-		fmt.Println(result)
-	}
-	q, r := div(12, 5)
-	fmt.Println(q, r)
+
+	a, b := 1, 4
+	a, b = swap(a, b)
+	fmt.Println(a, b)
+	//eval(12, 5, "/")
+	//if result, err := eval(12, 5, "x"); err != nil {
+	//	fmt.Println("error: ",  err)
+	//} else {
+	//	fmt.Println(result)
+	//}
+	//q, r := div(12, 5)
+	//fmt.Println(q, r)
 }
