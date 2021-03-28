@@ -10,5 +10,6 @@ func main() {
 	q.Push(2)
 	q.Pop()
 	q.Pop()
+	q.Push("444")
 	fmt.Println(q.IsEmpty())
 }
