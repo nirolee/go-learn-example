@@ -26,6 +26,6 @@ func printFileContents(reader io.Reader) {
 }
 
 func main() {
-	fibonacci()
-	//printFileContents(f)
+	f := fibonacci()
+	printFileContents(f)
 }
