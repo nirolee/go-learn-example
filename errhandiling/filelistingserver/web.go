@@ -3,6 +3,7 @@ package main
 import (
 	"gin/errhandiling/filelistingserver/filelisting"
 	"net/http"
+	_ "net/http/pprof"
 	"os"
 )
 
