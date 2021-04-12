@@ -1,6 +1,7 @@
 syntax = "proto3";
 
-package go.micro.service.product;
+package micro.service.product;
+option go_package = "./micro.service.product";
 
 service Product{
     rpc AddProduct(ProductInfo) returns (ResponseProduct) {}

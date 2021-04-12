@@ -39,6 +39,6 @@ func writeFile(filename string) {
 }
 
 func main() {
-	//tryDefer()
-	writeFile("fib.txt")
+	tryDefer()
+	//writeFile("fib.txt")
 }
